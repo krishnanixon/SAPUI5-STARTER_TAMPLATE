@@ -1,0 +1,33 @@
+<mvc:View
+	controllerName="nixgo.controller.InvoiceList"
+	height="100%"
+    xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Page
+		title="Title"
+		class="sapUiContentPadding sapUiResponsivePadding--header sapUiResponsivePadding--subHeader sapUiResponsivePadding--content sapUiResponsivePadding--footer"
+		showNavButton="true" >
+		<headerContent>
+			<Button icon="sap-icon://action" tooltip="Share" />
+		</headerContent>
+		<content>
+			<FlexBox
+				height="100%"
+				alignItems="Center"
+				justifyContent="Center">
+				<l:VerticalLayout class="sapUiContentPadding">
+						<Title text="Login" level="H1" />
+		            <Input type="email" id="useremail" placeholder="Enter Email" width="300px"/>
+                    <Input type="password" id="password" placeholder="Enter Password" width="300px"/>
+                    <Button text="Login" id="Login" width="300px" press=".onPressHome"/>
+	            </l:VerticalLayout>
+			</FlexBox>
+		</content>
+		<footer>
+        <OverflowToolbar>
+			<Text text="Nixon Dynamic Solution"/>
+            </OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>
